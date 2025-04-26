@@ -21,9 +21,3 @@ jobs:
       uses: actions/setup-go@v5
       with:
         go-version: ${{ matrix.go-version }}
-
-    - name: Install dependencies
-      run: |
-        go get .
-        go get example.com/octo-examplemodule
-        go get example.com/octo-examplemodule@v1.3.4
