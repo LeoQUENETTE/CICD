@@ -14,10 +14,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Hello World
+      run: |
+        echo "Hello world"
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11' # Ou la version que tu veux
+        python-version: '3.11'
 
     - name: Install dependencies
       run: |
