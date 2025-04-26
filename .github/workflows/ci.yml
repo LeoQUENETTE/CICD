@@ -23,7 +23,9 @@ jobs:
         go-version: ${{ matrix.go-version }}
     
     - name: Install dependencies
-      run: go get .
+      run: |
+        go mod init test3
+        go get .
 
     - name: Test with the Go CLI
       run: go test
